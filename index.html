@@ -188,6 +188,26 @@
         color: var(--ink-soft);
         font-size: 0.98rem;
       }
+      .home-pill {
+        position: fixed;
+        top: 0.75rem;
+        left: 0.75rem;
+        z-index: 10;
+        display: inline-block;
+        padding: 0.3rem 0.85rem;
+        background: var(--paper);
+        color: var(--accent);
+        border: 1px solid var(--rule);
+        border-radius: 999px;
+        box-shadow: 0 1px 6px var(--shadow);
+        font-family: "EB Garamond", Georgia, serif;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+      }
+      .home-pill:hover { color: var(--ink); border-color: var(--accent-soft); }
+
       footer p { margin: 0.25rem 0; }
       footer .web-note { font-style: italic; font-size: 0.92rem; }
 
@@ -200,6 +220,7 @@
     </style>
   </head>
   <body>
+    <a class="home-pill" href="https://jesuslovestyler.com/">&#8962; Home</a>
     <main class="page">
       <header>
         <svg class="ornament" width="30" height="40" viewBox="0 0 30 40" fill="none" aria-hidden="true">
@@ -320,5 +341,6 @@
         <p class="web-note">All Scripture quotations are from the World English Bible (WEB), which is in the public domain.</p>
       </footer>
     </main>
+    <script data-goatcounter="https://jesuslovestyler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>
