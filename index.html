@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>The Invitations of Jesus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #f7efdc;
+        --bg-deep: #f1e5c9;
+        --paper: #fdf8ec;
+        --ink: #3a2a1a;
+        --ink-soft: #5d4630;
+        --accent: #8a5a1e;
+        --accent-soft: #b98a3e;
+        --rule: #d9c69c;
+        --quote-bg: #fbf4e2;
+        --shadow: rgba(90, 62, 20, 0.14);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #20180f;
+          --bg-deep: #191209;
+          --paper: #2a2013;
+          --ink: #ecdfc4;
+          --ink-soft: #c9b48c;
+          --accent: #d9a94f;
+          --accent-soft: #b98a3e;
+          --rule: #57452a;
+          --quote-bg: #241b10;
+          --shadow: rgba(0, 0, 0, 0.45);
+        }
+      }
+
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(120% 60% at 50% -10%, var(--bg-deep), transparent 70%),
+          var(--bg);
+        color: var(--ink);
+        font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+        font-size: 1.125rem;
+        line-height: 1.65;
+      }
+
+      .page {
+        max-width: 44rem;
+        margin: 0 auto;
+        padding: 3rem 1.25rem 2.5rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2.75rem;
+      }
+      .ornament {
+        display: block;
+        margin: 0 auto 1.1rem;
+        color: var(--accent);
+      }
+      h1 {
+        font-family: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+        font-weight: 700;
+        font-size: clamp(2.3rem, 8vw, 3.4rem);
+        line-height: 1.1;
+        margin: 0 0 0.4rem;
+        letter-spacing: 0.01em;
+      }
+      .subtitle {
+        font-style: italic;
+        color: var(--ink-soft);
+        font-size: 1.15rem;
+        margin: 0 0 1.6rem;
+      }
+      .intro {
+        text-align: left;
+        max-width: 38rem;
+        margin: 0 auto;
+        font-size: 1.16rem;
+      }
+      .intro .come {
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .divider {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin: 2.6rem auto;
+        max-width: 22rem;
+        color: var(--accent-soft);
+      }
+      .divider::before,
+      .divider::after {
+        content: "";
+        flex: 1;
+        border-top: 1px solid var(--rule);
+      }
+      .divider span { font-size: 0.85rem; letter-spacing: 0.35em; }
+
+      section.invitation {
+        background: var(--paper);
+        border: 1px solid var(--rule);
+        border-radius: 6px;
+        box-shadow: 0 2px 10px var(--shadow);
+        padding: 1.9rem 1.6rem 1.7rem;
+        margin-bottom: 1.6rem;
+      }
+      section.invitation h2 {
+        font-family: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+        font-weight: 600;
+        font-size: 1.65rem;
+        line-height: 1.2;
+        margin: 0 0 1rem;
+        color: var(--ink);
+      }
+      blockquote {
+        margin: 0 0 1rem;
+        padding: 1.1rem 1.2rem 1.05rem;
+        background: var(--quote-bg);
+        border-left: 3px solid var(--accent-soft);
+        border-radius: 0 4px 4px 0;
+      }
+      blockquote p {
+        margin: 0;
+        font-size: 1.22rem;
+        line-height: 1.6;
+        font-weight: 500;
+      }
+      .ref {
+        display: block;
+        margin-top: 0.65rem;
+        font-size: 0.98rem;
+        font-style: italic;
+        color: var(--accent);
+        letter-spacing: 0.02em;
+      }
+      .for-whom {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 1.1rem;
+      }
+      .for-whom strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .closing {
+        text-align: center;
+        max-width: 38rem;
+        margin: 2.8rem auto 0;
+      }
+      .closing h2 {
+        font-family: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+        font-weight: 600;
+        font-size: 1.7rem;
+        margin: 0 0 1rem;
+      }
+      .closing p {
+        font-size: 1.18rem;
+        margin: 0 0 1rem;
+      }
+      .closing .final-word {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: 0.04em;
+        margin-top: 1.2rem;
+      }
+
+      footer {
+        margin-top: 3.2rem;
+        padding-top: 1.4rem;
+        border-top: 1px solid var(--rule);
+        text-align: center;
+        color: var(--ink-soft);
+        font-size: 0.98rem;
+      }
+      footer p { margin: 0.25rem 0; }
+      footer .web-note { font-style: italic; font-size: 0.92rem; }
+
+      @media (max-width: 480px) {
+        .page { padding: 2.2rem 1rem 2rem; }
+        section.invitation { padding: 1.5rem 1.15rem 1.35rem; }
+        blockquote { padding: 1rem 1rem 0.95rem; }
+        blockquote p { font-size: 1.16rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <svg class="ornament" width="30" height="40" viewBox="0 0 30 40" fill="none" aria-hidden="true">
+          <path d="M15 2v36M6 13h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <h1>The Invitations of Jesus</h1>
+        <p class="subtitle">Every &ldquo;come&rdquo; He ever spoke, gathered in one place</p>
+        <p class="intro">
+          Over and over, in every season of His ministry and even from the throne, Jesus&rsquo;s word
+          to people is one word &mdash; <span class="come">come</span>. He said it to the weary and
+          the curious, to fishermen at their nets and to a church at its door. He has never stopped
+          saying it. Here are His invitations, in His own words.
+        </p>
+      </header>
+
+      <div class="divider" aria-hidden="true"><span>&#10022;</span></div>
+
+      <section class="invitation">
+        <h2>&ldquo;Come to me, all you who labor&rdquo;</h2>
+        <blockquote>
+          <p>&ldquo;Come to me, all you who labor and are heavily burdened, and I will give you rest.
+          Take my yoke upon you, and learn from me, for I am gentle and humble in heart; and you will
+          find rest for your souls. For my yoke is easy, and my burden is light.&rdquo;</p>
+          <cite class="ref">Matthew 11:28&ndash;30</cite>
+        </blockquote>
+        <p class="for-whom"><strong>For the weary:</strong> if you are carrying more than you can
+        hold, rest is not a wage you earn at the end of the work &mdash; Jesus gives it freely, to
+        anyone who simply comes.</p>
+      </section>
+
+      <section class="invitation">
+        <h2>&ldquo;I will in no way cast out&rdquo;</h2>
+        <blockquote>
+          <p>&ldquo;All those whom the Father gives me will come to me. He who comes to me I will in
+          no way cast out.&rdquo;</p>
+          <cite class="ref">John 6:37</cite>
+        </blockquote>
+        <p class="for-whom"><strong>For the one afraid of being turned away:</strong> perhaps you
+        fear you have come too late, or too often, or too broken. Jesus has never cast out a single
+        person who came to Him &mdash; and He will not begin with you.</p>
+      </section>
+
+      <section class="invitation">
+        <h2>&ldquo;If anyone is thirsty&rdquo;</h2>
+        <blockquote>
+          <p>&ldquo;If anyone is thirsty, let him come to me and drink! He who believes in me, as the
+          Scripture has said, from within him will flow rivers of living water.&rdquo;</p>
+          <cite class="ref">John 7:37&ndash;38</cite>
+        </blockquote>
+        <p class="for-whom"><strong>For the thirsty:</strong> if you have drunk from every other
+        well and still wake up empty, this is spoken to you. Come and drink &mdash; and find the
+        thirst itself answered, until life flows out of you to others.</p>
+      </section>
+
+      <section class="invitation">
+        <h2>&ldquo;Come, and you will see&rdquo;</h2>
+        <blockquote>
+          <p>He said to them, &ldquo;Come, and see.&rdquo; They came and saw where he was staying,
+          and they stayed with him that day. It was about the tenth hour.</p>
+          <cite class="ref">John 1:39</cite>
+        </blockquote>
+        <p class="for-whom"><strong>For the curious and the not-yet-sure:</strong> two men asked
+        Jesus where He was staying, and He did not hand them an argument &mdash; He opened His
+        door. You do not have to understand everything first. Come and see, and stay awhile.</p>
+      </section>
+
+      <section class="invitation">
+        <h2>&ldquo;Come after me&rdquo;</h2>
+        <blockquote>
+          <p>&ldquo;Come after me, and I will make you fishers for men.&rdquo;</p>
+          <cite class="ref">Matthew 4:19</cite>
+        </blockquote>
+        <p class="for-whom"><strong>For ordinary people at ordinary work:</strong> Jesus found
+        fishermen mending nets, not saints in a sanctuary. His call is not only to believe something
+        about Him, but to follow Him &mdash; and He Himself makes your life fruitful as you go.</p>
+      </section>
+
+      <section class="invitation">
+        <h2>&ldquo;I stand at the door and knock&rdquo;</h2>
+        <blockquote>
+          <p>&ldquo;Behold, I stand at the door and knock. If anyone hears my voice and opens the
+          door, I will come in to him, and will dine with him, and he with me.&rdquo;</p>
+          <cite class="ref">Revelation 3:20</cite>
+        </blockquote>
+        <p class="for-whom"><strong>For the one who hears a knock:</strong> He does not break the
+        door down. He stands and knocks and waits to be welcomed &mdash; not to scold you, but to
+        sit at your table and share a meal, as a friend.</p>
+      </section>
+
+      <section class="invitation">
+        <h2>The last invitation in the Bible</h2>
+        <blockquote>
+          <p>&ldquo;The Spirit and the bride say, &lsquo;Come!&rsquo; He who hears, let him say,
+          &lsquo;Come!&rsquo; He who is thirsty, let him come. He who desires, let him take the
+          water of life freely.&rdquo;</p>
+          <cite class="ref">Revelation 22:17</cite>
+        </blockquote>
+        <p class="for-whom"><strong>For anyone at all:</strong> this is the final word heaven speaks
+        to the world in all of Scripture, and it is not a warning &mdash; it is an invitation. No
+        price is named, because there is none. The water of life is free.</p>
+      </section>
+
+      <div class="divider" aria-hidden="true"><span>&#10022;</span></div>
+
+      <section class="closing">
+        <h2>An open door, and one word</h2>
+        <p>
+          The Bible ends the way Jesus began: with an open door and one word. From the shore of
+          Galilee to the throne room of heaven, through His whole ministry and on the very last page
+          of Scripture, He never stopped saying it &mdash; and He has not stopped now. Whoever you
+          are, and whatever you are carrying, the invitation still stands, and it is spoken to you.
+        </p>
+        <p class="final-word">Come.</p>
+      </section>
+
+      <footer>
+        <p>Made by Noki for Tyler. Public domain &mdash; share freely.</p>
+        <p class="web-note">All Scripture quotations are from the World English Bible (WEB), which is in the public domain.</p>
+      </footer>
+    </main>
+  </body>
+</html>
