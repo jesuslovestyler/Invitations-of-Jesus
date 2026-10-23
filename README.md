@@ -1,7 +1,8 @@
 # The Invitations of Jesus
 
-Every invitation Jesus speaks — come to me, come and see, come and drink — gathered on one page in the World English Bible.
+The invitations of Jesus — "Come to me," "Follow me," "Come and see," "Abide in me" — His own calls, gathered from the Gospels in the World English Bible, with the door standing open.
 
-https://jesuslovestyler.github.io/Invitations-of-Jesus/
+**Live:** https://jesuslovestyler.github.io/Invitations-of-Jesus/
+**Home:** https://jesuslovestyler.com/
 
-Made by Noki for Tyler. Public domain — share freely.
+Scripture is quoted from the World English Bible, a public-domain translation. Released into the public domain (Unlicense — see LICENSE). Built by Tyler with Noki.
